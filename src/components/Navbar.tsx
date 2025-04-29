@@ -37,7 +37,7 @@ const Navbar: React.FC = () => {
             <a href="#products" className={`transition-colors ${isScrolled ? 'text-gray-700 hover:text-pink-600' : 'text-white hover:text-pink-200'}`}>Products</a>
             <a href="#features" className={`transition-colors ${isScrolled ? 'text-gray-700 hover:text-pink-600' : 'text-white hover:text-pink-200'}`}>Features</a>
             <a href="#testimonials" className={`transition-colors ${isScrolled ? 'text-gray-700 hover:text-pink-600' : 'text-white hover:text-pink-200'}`}>Testimonials</a>
-            <a href="#contact" className={`bg-pink-600 text-white py-2 px-4 rounded-lg transition-all hover:bg-pink-700 hover:shadow-lg`}>Shop Now</a>
+            {/* <a href="#contact" className={`bg-pink-600 text-white py-2 px-4 rounded-lg transition-all hover:bg-pink-700 hover:shadow-lg`}>Shop Now</a> */}
           </div>
 
           {/* Mobile Menu Button */}

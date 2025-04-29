@@ -10,6 +10,7 @@ interface ProductModalProps {
 
 const ProductModal: React.FC<ProductModalProps> = ({ product, isOpen, onClose }) => {
   const modalRef = useRef<HTMLDivElement>(null);
+  const overlayRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
@@ -28,6 +29,20 @@ const ProductModal: React.FC<ProductModalProps> = ({ product, isOpen, onClose })
       document.addEventListener('mousedown', handleClickOutside);
       document.addEventListener('keydown', handleEscKey);
       document.body.style.overflow = 'hidden';
+      
+      // Asegúrarse de que el modal sea visible en el viewport
+      if (modalRef.current) {
+        // Añadir un pequeño retraso para permitir que el DOM se actualice
+        setTimeout(() => {
+          if (modalRef.current) {
+            modalRef.current.scrollIntoView({
+              behavior: 'auto',
+              block: 'center',
+              inline: 'center'
+            });
+          }
+        }, 50);
+      }
     }
 
     return () => {
@@ -40,10 +55,20 @@ const ProductModal: React.FC<ProductModalProps> = ({ product, isOpen, onClose })
   if (!product || !isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm">
+    <div 
+      ref={overlayRef}
+      className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm"
+      style={{ 
+        alignItems: 'center',
+        minHeight: '100vh',
+        paddingTop: 'env(safe-area-inset-top)',
+        paddingBottom: 'env(safe-area-inset-bottom)'
+      }}
+    >
       <div 
         ref={modalRef}
-        className="relative w-full max-w-3xl bg-white rounded-xl shadow-2xl overflow-hidden animate-fadeIn"
+        className="relative w-full max-w-3xl bg-white rounded-xl shadow-2xl m-auto"
+        style={{ maxHeight: '80vh', overflowY: 'auto' }}
       >
         <button
           onClick={onClose}
@@ -66,17 +91,6 @@ const ProductModal: React.FC<ProductModalProps> = ({ product, isOpen, onClose })
             <h2 className="text-2xl font-bold text-gray-800">{product.name}</h2>
             <p className="mt-1 text-gray-600">{product.tagline}</p>
             
-            {/* <div className="mt-4 flex space-x-2">
-              {product.colors.map((color, index) => (
-                <div 
-                  key={index}
-                  className="h-6 w-6 rounded-full border-2 border-white shadow-sm cursor-pointer transition-transform hover:scale-110"
-                  style={{ backgroundColor: color }}
-                  aria-label={`Color option ${index + 1}`}
-                />
-              ))}
-            </div> */}
-            
             <p className="mt-6 text-gray-700">{product.description}</p>
             
             <div className="mt-6">
@@ -93,9 +107,6 @@ const ProductModal: React.FC<ProductModalProps> = ({ product, isOpen, onClose })
             
             <div className="mt-8 flex items-center justify-between">
               <span className="text-2xl font-bold text-gray-800">{product.price}</span>
-              <button className="bg-pink-600 px-6 py-2 rounded-lg text-white font-medium transition-all hover:bg-pink-700 hover:shadow-lg">
-                Add to Cart
-              </button>
             </div>
           </div>
         </div>

@@ -33,7 +33,7 @@ const HeroSlider: React.FC = () => {
   }, [currentSlide, isAnimating]);
 
   return (
-    <section id="home" className="relative h-screen w-full overflow-hidden">
+    <section id="home" className="relative h-screen w-full overflow-hidden" data-aos="fade-up">
       {/* Slider */}
       <div className="relative h-full w-full">
         {sliderImages.map((slide, index) => (
@@ -54,36 +54,24 @@ const HeroSlider: React.FC = () => {
             
             <div className="absolute inset-0 flex flex-col items-center justify-center px-4 text-center text-white">
               <h1 
-                className="mb-4 text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight transition-all duration-700 transform translate-y-0 opacity-100"
-                style={{
-                  opacity: index === currentSlide ? 1 : 0,
-                  transform: index === currentSlide ? 'translateY(0)' : 'translateY(20px)',
-                  transition: 'opacity 700ms ease-in-out, transform 700ms ease-in-out',
-                  transitionDelay: '200ms'
-                }}
+                className={`mb-4 text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight transition-opacity duration-500 ${
+                  index === currentSlide ? 'opacity-100' : 'opacity-0'
+                }`}
               >
                 {slide.title}
               </h1>
               <p 
-                className="mb-8 text-xl md:text-2xl transition-all duration-700 transform translate-y-0 opacity-100"
-                style={{
-                  opacity: index === currentSlide ? 1 : 0,
-                  transform: index === currentSlide ? 'translateY(0)' : 'translateY(20px)',
-                  transition: 'opacity 700ms ease-in-out, transform 700ms ease-in-out',
-                  transitionDelay: '400ms'
-                }}
+                className={`mb-8 text-xl md:text-2xl transition-opacity duration-500 ${
+                  index === currentSlide ? 'opacity-100' : 'opacity-0'
+                }`}
               >
                 {slide.subtitle}
               </p>
               <a 
                 href="#products" 
-                className="px-6 py-3 bg-pink-600 rounded-lg font-medium text-white transition-all duration-300 hover:bg-pink-700 hover:shadow-lg"
-                style={{
-                  opacity: index === currentSlide ? 1 : 0,
-                  transform: index === currentSlide ? 'translateY(0)' : 'translateY(20px)',
-                  transition: 'opacity 700ms ease-in-out, transform 700ms ease-in-out',
-                  transitionDelay: '600ms'
-                }}
+                className={`px-6 py-3 bg-pink-600 rounded-lg font-medium text-white transition-opacity duration-500 hover:bg-pink-700 hover:shadow-lg ${
+                  index === currentSlide ? 'opacity-100' : 'opacity-0'
+                }`}
               >
                 Explore Collection
               </a>

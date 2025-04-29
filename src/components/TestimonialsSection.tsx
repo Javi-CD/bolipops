@@ -31,7 +31,7 @@ const testimonials: Testimonial[] = [
     id: 3,
     name: "Javier Pérez",
     title: "Developer",
-    content: "The Raspberry Chill pops with bright berry flavor and melts into a velvety finish. It’s the perfect balance of tart and sweet absolutely delicious!",
+    content: "The Raspberry Chill pops with bright berry flavor and melts into a velvety finish. It's the perfect balance of tart and sweet absolutely delicious!",
     rating: 4,
     imageUrl: "https://images.pexels.com/p"
   }
@@ -39,7 +39,7 @@ const testimonials: Testimonial[] = [
 
 const TestimonialsSection: React.FC = () => {
   return (
-    <section id="testimonials" className="py-16 md:py-24 bg-gradient-to-b from-white to-pink-50">
+    <section id="testimonials" className="py-16 md:py-24 bg-gradient-to-b from-white to-pink-50" data-aos="fade-up">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">What Our Customers Say</h2>
@@ -49,7 +49,7 @@ const TestimonialsSection: React.FC = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {testimonials.map((testimonial) => (
+          {testimonials.map((testimonial, idx) => (
             <div 
               key={testimonial.id} 
               className="bg-white rounded-xl shadow-sm p-6 transition-all duration-300 hover:shadow-md"

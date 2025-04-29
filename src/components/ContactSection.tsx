@@ -13,13 +13,13 @@ const ContactSection: React.FC = () => {
   };
 
   return (
-    <section id="contact" className="py-16 md:py-24 bg-gray-900 text-white">
+    <section id="contact" className="py-16 md:py-24 bg-gray-900 text-white" data-aos="fade-up">
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <div>
             <h2 className="text-3xl md:text-4xl font-bold mb-6">Stay Connected</h2>
             <p className="text-gray-300 mb-8">
-              Join our newsletter to receive updates on new products, special offers, and writing tips.
+              Join our newsletter to receive updates on new products.
             </p>
             
             {!subscribed ? (

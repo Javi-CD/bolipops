@@ -32,18 +32,18 @@ const features: Feature[] = [
 
 const FeaturesSection: React.FC = () => {
   return (
-    <section id="features" className="py-16 md:py-24">
+    <section id="features" className="py-16 md:py-24" data-aos="fade-up">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Why Choose Bolipops</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-          They're not just ice cream, they're bites of artisanal freshness that delight your palate.          </p>
+          They're not just ice cream, they're bites of artisanal freshness that delight your palate.</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {features.map((feature, index) => (
+          {features.map((feature, idx) => (
             <div 
-              key={index} 
+              key={idx} 
               className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300"
             >
               <div className="bg-pink-50 p-3 inline-flex rounded-lg mb-4">
