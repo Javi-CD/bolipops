@@ -37,7 +37,7 @@ const FeaturesSection: React.FC = () => {
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Why Choose Bolipops</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-          They're not just ice cream, they're bites of artisanal freshness that delight your palate.</p>
+          They're not just bolis, they're bites of artisanal freshness that delight your palate.</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
