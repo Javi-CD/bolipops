@@ -1,4 +1,13 @@
-import { StaticImageData } from 'next/image';
+// import { StaticImageData } from 'next/image';
+
+import kolaImg from "../assets/images/products/kola_con_leche.png";
+import mangoImg from "../assets/images/products/mango_biche_2.png";
+import maniImg from "../assets/images/products/mani.png";
+import nucitaImg from "../assets/images/products/nucita.png";
+import kolaSliderImg from "../assets/images/slider/kola_slider.png";
+import maniSliderImg from "../assets/images/slider/mani_slider.png";
+import nucitaSliderImg from "../assets/images/slider/nucita_slider.png";
+
 
 export interface Product {
   id: number;
@@ -31,7 +40,7 @@ export const products: Product[] = [
       "Refreshing",
       "Delicious"
     ],
-    imageUrl: "src/public/img/kola_con_leche.png"
+    imageUrl:  kolaImg
   },
 
   // TODO Boli de mango biche
@@ -52,7 +61,7 @@ export const products: Product[] = [
       "exquisite",
       "healthy"
     ],
-    imageUrl: "src/public/img/mango_biche_2.png"
+    imageUrl: mangoImg
   },
 
   // TODO Boli de mani
@@ -74,7 +83,7 @@ export const products: Product[] = [
       "natural"
 
     ],
-    imageUrl: "src/public/img/mani.png"
+    imageUrl: maniImg
   },
   
   // TODO Boli de Nucita
@@ -95,7 +104,7 @@ export const products: Product[] = [
       "Creamy",
       "Delicious"
     ],
-    imageUrl: "src/public/img/nucita.png"
+    imageUrl: nucitaImg
   },
 ];
 
@@ -104,18 +113,18 @@ export const sliderImages = [
     id: 1,
     title: "Fresh and Fun",
     subtitle: "artisanal olis that awaken your senses",
-    imageUrl: "src/public/img/slider/kola_slider.png"
+    imageUrl: kolaSliderImg
   },
   {
     id: 2,
     title: "Explosion of Flavors",
     subtitle: "Vibrant frozen routes for your palate",
-    imageUrl: "src/public/img/slider/nucita_slider.png"
+    imageUrl: nucitaSliderImg
   },
   {
     id: 3,
     title: "Refresh Your Day",
     subtitle: "icy sweetness that sings of summer",
-    imageUrl: "src/public/img/slider/mani_slider.png"
+    imageUrl: maniSliderImg
   },
 ];

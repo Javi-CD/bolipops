@@ -1,6 +1,10 @@
 import React from 'react';
 import { Star } from 'lucide-react';
 
+import camaleonImg from '../assets/images/testimonial/CAMALEON.png';
+import kalelImg from '../assets/images/testimonial/KALEL.jpeg';
+import samuelImg from '../assets/images/testimonial/SAMUEL.jpeg';
+
 interface Testimonial {
   id: number;
   name: string;
@@ -17,15 +21,15 @@ const testimonials: Testimonial[] = [
     title: "Student",
     content: "The Nucita Pop is a delightful treat! The combination of chocolate and peanut butter is heavenly. I can't resist these popsicles!",
     rating: 5,
-    imageUrl: "src/public/img/testimonial/KALEL.jpeg"
+    imageUrl: kalelImg
   },
   {
     id: 2,
-    name: "Samuel",
+    name: "Samuel Nuñez",
     title: "Student",
     content: "After a scorching hike, the Mango pop was pure bliss tangy, sweet, and just cold enough to revive my soul. My new go-to adventure snack!",
     rating: 5,
-    imageUrl: "src/public/img/testimonial/SAMUEL.jpeg"
+    imageUrl: samuelImg
   },
   {
     id: 3,
@@ -33,7 +37,7 @@ const testimonials: Testimonial[] = [
     title: "Developer",
     content: "The Kola Pop is a game-changer! The cola flavor is spot on, and the creamy texture is just divine. I can't get enough of these!",
     rating: 5,
-    imageUrl: "src/public/img/testimonial/CAMALEON.png"
+    imageUrl: camaleonImg
   }
 ];
 
