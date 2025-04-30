@@ -15,25 +15,25 @@ const testimonials: Testimonial[] = [
     id: 1,
     name: "Kalel Coronel",
     title: "Student",
-    content: "I fell in love with Bolipops from the very first lick! The natural fruit flavors burst with freshness, and the creamy texture makes every bite feel like summer in a stick.",
+    content: "The Nucita Pop is a delightful treat! The combination of chocolate and peanut butter is heavenly. I can't resist these popsicles!",
     rating: 5,
-    imageUrl: "https://images.pexels.com/}"
+    imageUrl: "src/public/img/testimonial/KALEL.jpeg"
   },
   {
     id: 2,
-    name: "Andres Gonzalez",
+    name: "Samuel",
     title: "Student",
-    content: "After a scorching hike, the Mango Tango Bolipop was pure bliss tangy, sweet, and just cold enough to revive my soul. My new go-to adventure snack!",
+    content: "After a scorching hike, the Mango pop was pure bliss tangy, sweet, and just cold enough to revive my soul. My new go-to adventure snack!",
     rating: 5,
-    imageUrl: "https://images.pexels.com/"
+    imageUrl: "src/public/img/testimonial/SAMUEL.jpeg"
   },
   {
     id: 3,
     name: "Javier Pérez",
     title: "Developer",
-    content: "The Raspberry Chill pops with bright berry flavor and melts into a velvety finish. It's the perfect balance of tart and sweet absolutely delicious!",
-    rating: 4,
-    imageUrl: "https://images.pexels.com/p"
+    content: "The Kola Pop is a game-changer! The cola flavor is spot on, and the creamy texture is just divine. I can't get enough of these!",
+    rating: 5,
+    imageUrl: "src/public/img/testimonial/CAMALEON.png"
   }
 ];
 

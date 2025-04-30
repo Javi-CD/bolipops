@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
+import Logo from '../assets/bolipops_logo.svg'; 
 
 const Navbar: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -28,6 +29,9 @@ const Navbar: React.FC = () => {
         <div className="flex justify-between items-center">
           <a href="#" className="flex items-center gap-2">
             {/* <PenTool className={`h-8 w-8 ${isScrolled ? 'text-pink-600' : 'text-white'}`} /> */}
+            <a href="#home">
+        <img className="h-10 w-auto" src={Logo} alt="Bolipops Logo" />
+      </a>
             <span className={`text-xl font-bold ${isScrolled ? 'text-gray-800' : 'text-white'}`}>Bolipops</span>
           </a>
 

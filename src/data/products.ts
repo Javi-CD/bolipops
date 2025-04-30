@@ -12,10 +12,12 @@ export interface Product {
 }
 
 export const products: Product[] = [
+
+  // TODO Boli de Kola con leche
   {
     id: 1,
-    name: "Classic Pop",
-    tagline: "A classic flavor, but loved by all",
+    name: "Kola Pop",
+    tagline: "A sweet and exquisite cola con leche boli for $1,500 COP",
     description: "Bolipops feature a classic yet vibrant vanilla flavor, making you enjoy every bite.",
     price: "$1.500",
     colors: [
@@ -29,14 +31,16 @@ export const products: Product[] = [
       "Refreshing",
       "Delicious"
     ],
-    imageUrl: "src\\public\\img\\Paleta_vainilla.png"
+    imageUrl: "src/public/img/kola_con_leche.png"
   },
+
+  // TODO Boli de mango biche
   {
     id: 2,
     name: "Mango Pop",
-    tagline: "A delicious natural mango flavor",
-    description:  "Boli Lemon is an explosion of citrus flavor that will leave you feeling refreshed and revitalized.",
-    price: "$1.500",
+    tagline: "Green mango boli with a sweet and sour and exquisite flavor for a price of $2000 COP",
+    description:  "Boli Mango Biche is a delightful treat that combines the sweetness of ripe mangoes with a refreshing twist.",
+    price: "$2.000",
     colors: [
       "#FFD6FF", 
       "#E7C6FF", 
@@ -44,18 +48,20 @@ export const products: Product[] = [
       "#B8C0FF"
     ],
     features: [
-      "Citrusy and refreshing",
-      "Refreshing",
-      "Delicious"
+      "Natural flavor",
+      "exquisite",
+      "healthy"
     ],
-    imageUrl: "src\\public\\img\\paleta_mango.png"
+    imageUrl: "src/public/img/mango_biche_2.png"
   },
+
+  // TODO Boli de mani
   {
     id: 3,
-    name: "Bolipop lemon",
-    tagline: "A citrus flavor that will make you feel fresh",
-    description: "Boli Lemon is an explosion of citrus flavor that will leave you feeling refreshed and revitalized.",
-    price: "$1.500",
+    name: "Peanut Pop",
+    tagline: "Peanut boli with a unique and exquisite flavor for a price of $2,000 COP",
+    description: "Peanuts are a good source of protein, our popsicles combine that source of protein with a delicious and refreshing flavor.",
+    price: "$2.000",
     colors: [
       "#B76E79", 
       "#C0C0C0", 
@@ -63,20 +69,21 @@ export const products: Product[] = [
       "#D4AF37"
     ],
     features: [
-      "Citrusy and refreshing",
-      "Refreshing",
-      "Delicious"
+      "healthy",
+      "nutritious",
+      "natural"
 
     ],
-    imageUrl: "src\\public\\img\\paleta_limon.png"
+    imageUrl: "src/public/img/mani.png"
   },
   
+  // TODO Boli de Nucita
   {
     id: 4,
-    name: "Mango Pop",
-    tagline: "A delicious natural mango flavor",
-    description: "Boli Lemon is an explosion of citrus flavor that will leave you feeling refreshed and revitalized.",
-    price: "$1.500",
+    name: "Nucita Pop",
+    tagline: "A unique and delicious nutty boli for $2,000.",
+    description: "Boli Nucita is a delightful treat that combines the richness of chocolate with a creamy texture.",
+    price: "$2.000",
     colors: [
       "#FFD6FF", 
       "#E7C6FF", 
@@ -84,47 +91,11 @@ export const products: Product[] = [
       "#B8C0FF"
     ],
     features: [
-      "Citrusy and refreshing",
-      "Refreshing",
+      "Chocolatey goodness",
+      "Creamy",
       "Delicious"
     ],
-    imageUrl: "src\\public\\img\\paleta_mango.png"
-  },
-  {
-    id: 5,
-    name: "Mango Pop",
-    tagline: "A delicious natural mango flavor",
-    description: "Boli Lemon is an explosion of citrus flavor that will leave you feeling refreshed and revitalized.",
-    price: "$1.500",
-    colors: [
-      "#FFD6FF", 
-      "#E7C6FF", "#C8B6FF", 
-      "#B8C0FF"
-    ],
-    features: [
-      "Citrusy and refreshing",
-      "Refreshing",
-      "Delicious"
-    ],
-    imageUrl: "src\\public\\img\\paleta_mango.png"
-  },
-  {
-    id: 6,
-    name: "Mango Pop",
-    tagline: "A delicious natural mango flavor",
-    description: "Boli Lemon is an explosion of citrus flavor that will leave you feeling refreshed and revitalized.",
-    price: "$1.500",
-    colors: [
-      "#FFD6FF", 
-      "#E7C6FF", 
-      "#C8B6FF", 
-      "#B8C0FF"],
-    features: [
-      "Citrusy and refreshing",
-      "Refreshing",
-      "Delicious"
-    ],
-    imageUrl: "src\\public\\img\\paleta_mango.png"
+    imageUrl: "src/public/img/nucita.png"
   },
 ];
 
@@ -133,18 +104,18 @@ export const sliderImages = [
     id: 1,
     title: "Fresh and Fun",
     subtitle: "artisanal olis that awaken your senses",
-    imageUrl: "src/public/img/paleta_mango.png"
+    imageUrl: "src/public/img/slider/kola_slider.png"
   },
   {
     id: 2,
     title: "Explosion of Flavors",
     subtitle: "Vibrant frozen routes for your palate",
-    imageUrl:"src/public/img/paleta_limon.png"
+    imageUrl: "src/public/img/slider/nucita_slider.png"
   },
   {
     id: 3,
     title: "Refresh Your Day",
     subtitle: "icy sweetness that sings of summer",
-    imageUrl: "src/public/img/paleta_limon.png"
-  }
+    imageUrl: "src/public/img/slider/mani_slider.png"
+  },
 ];
