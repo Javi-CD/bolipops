@@ -1,5 +1,6 @@
 import React from 'react';
 import { Facebook, Instagram, Twitter } from 'lucide-react';
+import Logo from '../assets/bolipops_logo.svg'; 
 
 const Footer: React.FC = () => {
   return (
@@ -9,6 +10,7 @@ const Footer: React.FC = () => {
           <div>
             <div className="flex items-center gap-2 mb-4">
               {/* <PenTool className="h-6 w-6 text-pink-500" /> */}
+              <img className="h-11 w-auto" src={Logo} alt="Bolipops Logo" />
               <span className="text-xl font-bold text-white">Bolipops</span>
             </div>
             <p className="text-gray-400 mb-4">
@@ -30,11 +32,10 @@ const Footer: React.FC = () => {
           <div>
             <h3 className="text-white font-semibold mb-4">Products</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="hover:text-pink-500 transition-colors">Classic Pop</a></li>
-              <li><a href="#" className="hover:text-pink-500 transition-colors">Vainilla Dreams</a></li>
-              <li><a href="#" className="hover:text-pink-500 transition-colors">Lemon BoliPops</a></li>
-              <li><a href="#" className="hover:text-pink-500 transition-colors">Cherry-Pops</a></li>
-              <li><a href="#" className="hover:text-pink-500 transition-colors">Choco-Pops</a></li>
+              <li><a href="#products" className="hover:text-pink-500 transition-colors">Kola Pop</a></li>
+              <li><a href="#products" className="hover:text-pink-500 transition-colors">Mango Pop</a></li>
+              <li><a href="#products" className="hover:text-pink-500 transition-colors">Nucita Pop</a></li>
+              <li><a href="#products" className="hover:text-pink-500 transition-colors">Peanut Pops</a></li>
             </ul>
           </div>
           
