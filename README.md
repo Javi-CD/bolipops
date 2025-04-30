@@ -1,6 +1,6 @@
 # Bolipops 🍦
 
-![Bolipops Banner](src\public\img\header.png)
+![Bolipops Banner](src\assets\images\header.png)
 
 ## 📝 Descripción
 
