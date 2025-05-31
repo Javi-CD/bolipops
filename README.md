@@ -35,7 +35,7 @@ Bolipops es un sitio web para una marca de paletas heladas artesanales, desarrol
 
 1. Clona este repositorio:
 ```bash
-git clone https://github.com/tu-usuario/bolipops.git
+git clone https://github.com/Javi-CD/bolipops.git
 cd bolipops
 ```
 
@@ -136,10 +136,10 @@ Los archivos compilados estarán disponibles en la carpeta `dist/`, listos para 
 Las contribuciones son bienvenidas. Por favor, sigue estos pasos:
 
 1. Haz un fork del proyecto
-2. Crea una rama para tu característica (`git checkout -b feature/amazing-feature`)
+2. Crea una rama para tu característica (`git checkout -b feature/name-feature`)
 3. Realiza tus cambios
-4. Haz commit de tus cambios (`git commit -m 'Añade una característica increíble'`)
-5. Haz push a la rama (`git push origin feature/amazing-feature`)
+4. Haz commit de tus cambios (`git commit -m 'Añade una característica x'`)
+5. Haz push a la rama (`git push origin feature/name-feature`)
 6. Abre un Pull Request
 
 ## 📄 Licencia
